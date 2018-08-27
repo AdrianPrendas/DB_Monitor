@@ -2,13 +2,13 @@ var Controller = Controller || {}
 
 
 $(function () {
-    $("#hache1").html("jquery")
+    //$("#hache1").html("jquery")
 
     $("#btn-connect").on("click", function () {
         
         Controller.createTable()
         Controller.createBarChart()
-        Controller.createPieChart("A2")
+        Controller.createPieChart("A1")
         
     })
 

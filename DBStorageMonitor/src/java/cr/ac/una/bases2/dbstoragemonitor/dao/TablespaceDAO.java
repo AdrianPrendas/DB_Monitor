@@ -10,9 +10,9 @@ public class TablespaceDAO {
 
     static String[] headers = {"Tables", "Max MB", "Free MB", "Used MB", "%SP", "SatSP", "SatMx"};
     static Object[][] data = {
-        {"A1", 300, 250, 50, 80, "2d:2h", "4d:10h"},
-        {"A2", 300, 250, 50, 80, "2d:2h", "4d:10h"},
-        {"A3", 300, 250, 50, 80, "2d:2h", "4d:10h"},
+        {"A1", 600, 50, 550, 80, "2d:2h", "4d:10h"},
+        {"A2", 500, 250, 250, 80, "2d:2h", "4d:10h"},
+        {"A3", 400, 150, 250, 80, "2d:2h", "4d:10h"},
         {"A4", 300, 250, 50, 80, "2d:2h", "4d:10h"}
     };
     static JSONArray arr = new JSONArray(data);

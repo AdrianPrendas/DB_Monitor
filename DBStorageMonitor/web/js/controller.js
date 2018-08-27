@@ -22,7 +22,7 @@ var Controller = {
             data.addColumn('number', 'Free');
 
             res = res.map(function (e) {
-                return [e[0], e[1], e[2]];
+                return [e[0], e[3], e[2]];
             })
 
             data.addRows(res)
@@ -60,8 +60,8 @@ var Controller = {
             })
             var data = google.visualization.arrayToDataTable([
                 ['Storage', 'size'],
-                ['Free MB', res[1]],
-                ['Used MB', res[2]]
+                ['Free MB', res[2]],
+                ['Used MB', res[3]]
             ]);
 
             var options = {
