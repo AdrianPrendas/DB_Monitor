@@ -10,7 +10,7 @@ function drawStacked() {
         ["A1", 50, 250],
         ["A2", 150, 250],
         ["A3", 250, 250],
-        ["A4", 250, 350]
+        ["A4", 550, 50]
     ]);
 
     var options = {
@@ -29,11 +29,6 @@ function drawStacked() {
             title: 'Size MB'
         }
     };
-
-
-    var formatter = new google.visualization.ColorFormat();
-    formatter.addRange(-20000, 0, 'white', 'orange');
-    formatter.format(data, 1); // Apply formatter to second column
     
     var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
     chart.draw(data, options);

@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>DB STORAGE MONITOR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="./js/bar_chart.js"></script>
         <script type="text/javascript" src="./js/pie_chart.js"></script>
@@ -19,8 +21,10 @@
           <link rel="stylesheet" type="text/css" href="./css/style.css">
           
           <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">
+          <script type="text/javascript" src="./js/loadIndex.js"></script>
+          <script type="text/javascript" src="./js/controller.js"></script>
           
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
 
     </head>
     <body>
@@ -44,7 +48,7 @@
                     <label>PASSWORD</label>
                     <input type="text"/>
                     
-                    <button>connect</button>
+                    <button id="btn-connect">connect</button>
                     <br>
                     <br>
 
@@ -64,7 +68,7 @@
                                 <td>Sat Max</td>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="table">
                             <tr>
                                 <td>A1</td>
                                 <td>300</td>
@@ -92,11 +96,11 @@
                                 <td>2d:2h</td>
                                 <td>4d:10h</td>
                             </tr>
-                            <tr>
+                            <tr bgcolor="">
                                 <td>A4</td>
                                 <td>600</td>
-                                <td>250</td>
-                                <td>350</td>
+                                <td>50</td>
+                                <td>550</td>
                                 <td>80</td>
                                 <td>2d:2h</td>
                                 <td>4d:10h</td>
@@ -119,7 +123,7 @@
                 </div>
                 <div class="col-md-12 col-xs-12 contenedor">
 
-                    <h1>...</h1>
+                    <h1 id="hache1">...</h1>
 
                 </div>
             </div>
