@@ -8,6 +8,12 @@ body{
     background-color: #F7F7F7;
 }
 
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
 
 .contenedor{
     

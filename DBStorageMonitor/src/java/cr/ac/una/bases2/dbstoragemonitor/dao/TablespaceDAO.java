@@ -1,56 +1,82 @@
 package cr.ac.una.bases2.dbstoragemonitor.dao;
 
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import oracle.jdbc.OracleTypes;
 import org.json.JSONArray;
 
 /**
  *
  * @author _Adrián_Prendas_
  */
-public class TablespaceDAO {
-
-    static String[] headers = {"Tables", "Max MB", "Free MB", "Used MB", "%SP", "SatSP", "SatMx"};
-    static Object[][] data = {
-        {"A1", 600, 50, 550, 80, "2d:2h", "4d:10h"},
-        {"A2", 500, 250, 250, 80, "2d:2h", "4d:10h"},
-        {"A3", 400, 150, 250, 80, "2d:2h", "4d:10h"},
-        {"A4", 300, 250, 50, 80, "2d:2h", "4d:10h"}
-    };
-    static JSONArray arr = new JSONArray(data);
-
-    public static JSONArray getTableSpaces() {
-
-        for (Object e : arr) {
-            System.out.println(e);
-        }
-
-        return arr;
+public class TablespaceDAO extends ABaseDAO{
+    
+    public static TablespaceDAO instance;
+    
+    private static final String TABLESPACES = "{?= call storageInfo()}";
+    
+    private TablespaceDAO(){
+        super();
     }
-
-    public static JSONArray getRecord(String tablespace_name) {
-
-        for (int i = 0; i < arr.length(); i++) {
-            JSONArray arr2 = arr.getJSONArray(i);
-            if (arr2.get(0).equals(tablespace_name)) {
-                return arr2;
+    
+    public static TablespaceDAO getInstance(){
+        if(instance==null){
+            instance = new TablespaceDAO();
+        }
+        return instance;
+    }
+    
+    
+    public JSONArray getTablespaces() {
+        ResultSet rs = null;
+        JSONArray tablespaces = new JSONArray();
+        
+        CallableStatement pstmt=null;  
+        try {
+            conectar();
+        }catch (ClassNotFoundException e) {
+            System.out.println("No se ha localizado el driver");
+        } catch (SQLException e) {
+            System.out.println("La base de datos no se encuentra disponible");
+        }
+        try{
+            pstmt = conexion.prepareCall(TABLESPACES);                
+            pstmt.registerOutParameter(1, OracleTypes.CURSOR);            
+            pstmt.execute();
+            rs = (ResultSet)pstmt.getObject(1); 
+            while (rs.next()) {
+                JSONArray tuple = new JSONArray();
+                tuple.put(rs.getString("tablespace"));
+                tuple.put(rs.getInt("tam"));
+                tuple.put(rs.getFloat("free"));
+                tuple.put(rs.getFloat("used"));
+                
+                tablespaces.put(tuple);
             }
         }
-        return null;
-    }
-
-    public static JSONArray getTableSpaceNames() {
-
-        JSONArray arr3 = new JSONArray();
-        for (int i = 0; i < arr.length(); i++) {
-            JSONArray arr2 = arr.getJSONArray(i);
-            arr3.put(arr2.get(0));
+        catch (SQLException e) {
+            System.out.println("Sentencia no valida");
+            e.printStackTrace();
         }
-        return arr3;
+        finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+                desconectar();
+            } catch (SQLException e) {
+                System.out.println("Estatutos invalidos o nulos");
+               e.printStackTrace();
+            }
+        }
+        return tablespaces;
     }
-
-    public static void main(String[] args) {
-
-        //System.out.println(getRecord("A3"));
-        System.out.println(getTableSpaceNames());
-
-    }
+   
 }

@@ -1,6 +1,7 @@
 var Controller = {
     createTable: function(){
       Proxy.getTablespaces(function(res){
+          console.log(res)
           var str = ""
           res.forEach(function(tuple){
               str +="<tr>"                  

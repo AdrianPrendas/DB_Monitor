@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>DB STORAGE MONITOR</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="./js/bar_chart.js"></script>
         <script type="text/javascript" src="./js/pie_chart.js"></script>
@@ -18,54 +18,87 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="./js/Proxy.js"></script>
-          <link rel="stylesheet" type="text/css" href="./css/style.css">
-          
-          <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">
-          <script type="text/javascript" src="./js/loadIndex.js"></script>
-          <script type="text/javascript" src="./js/controller.js"></script>
-          
-          
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">
+        <script type="text/javascript" src="./js/loadIndex.js"></script>
+        <script type="text/javascript" src="./js/controller.js"></script>
+
+
+
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen"
+              href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+        <script type="text/javascript"
+                src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+        </script> 
+        <script type="text/javascript"
+                src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+        </script>
+        <script type="text/javascript"
+                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+        </script>
+        <script type="text/javascript"
+                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+        </script>
 
     </head>
     <body>
-        <script type="text/javascript">
-            Proxy.f(function(men){
-                alert(men.responseText)
-            })
-        </script>
     <center>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 contenedor">
-
                     <h1>DATABASE STORAGE MONITOR</h1>
-                    <label>DB PATH:</label>
-                    <input type="text"/>
-                    
-                    <label>USER</label>
-                    <input type="text"/>
-                    
-                    <label>PASSWORD</label>
-                    <input type="text"/>
-                    
-                    <button id="btn-connect">connect</button>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Interva:</label>
+                        </div>
+                        <div class="col">
+                            <div class="well">
+                                <div id="datetimepicker" class="input-append">
+                                    <input data-format="hh:mm:ss" type="text" style="height:30px;">
+                                    <span class="add-on" style="height:30px;">
+                                        <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label>Samples:</label>
+                                <input type="number" style="height:30px;"/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button id="btn-connect">Start</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p id="demo"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
                     <br>
                     <br>
 
                 </div>
-                
+
                 <div class="col-lg-12 contenedor">
                     <br>
-                    <table border="3" width="500px" style="text-align:center;" >
+                    <table border="3" width="500px" style="text-align:center;" class="table" >
                         <thead bgcolor="lime">
                             <tr>
-                                <td>Tables</td>
+                                <td>Tablespace</td>
                                 <td>Max MB</td>
                                 <td>Free MB</td>
                                 <td>Used MB</td>
                                 <td>%SP</td>
-                                <td>SatSP</td>
-                                <td>Sat Max</td>
+                                <td colspan="2">SatSP</td>
+                                <td colspan="2">Sat Max</td>
                             </tr>
                         </thead>
                         <tbody id="table">
@@ -76,7 +109,9 @@
                                 <td>50</td>
                                 <td>80</td>
                                 <td>2d:2h</td>
+                                <td>2d:2h</td>
                                 <td>4d:10h</td>
+                                <td>4d:10h</td> 
                             </tr>
                             <tr>
                                 <td>A2</td>
@@ -85,7 +120,9 @@
                                 <td>250</td>
                                 <td>80</td>
                                 <td>2d:2h</td>
+                                <td>2d:2h</td>
                                 <td>4d:10h</td>
+                                <td>4d:10h</td> 
                             </tr>
                             <tr>
                                 <td>A3</td>
@@ -94,7 +131,9 @@
                                 <td>250</td>
                                 <td>80</td>
                                 <td>2d:2h</td>
+                                <td>2d:2h</td>
                                 <td>4d:10h</td>
+                                <td>4d:10h</td> 
                             </tr>
                             <tr bgcolor="red">
                                 <td>A4</td>
@@ -103,27 +142,29 @@
                                 <td>550</td>
                                 <td>80</td>
                                 <td>2d:2h</td>
+                                <td>2d:2h</td>
                                 <td>4d:10h</td>
+                                <td>4d:10h</td> 
                             </tr>
                         </tbody>
                     </table>
                     <br>
                 </div>
-                
+
                 <div class="col-md-6 col-xs-6">
-                    
+
                     <div class="contenedor">
                         <div id="chart_div" style="width: 500px;height: 300px; "></div>
                     </div>
-                    
+
 
                 </div>                
                 <div class="col-md-6  col-xs-5">
-                    
+
                     <div class="contenedor">
                         <div id="piechart" style="width: 500px; height: 300px;"></div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-12 col-xs-12 contenedor">
 
@@ -132,11 +173,11 @@
                 </div>
             </div>
         </div>
-       </center>
+    </center>
     <br>
     <br>
     <br>
-    </body>
+</body>
 </html>
 
 
