@@ -5,7 +5,7 @@ var Controller = {
             str += "<tr>"
             tuple.forEach(function (element) {
                 str += "<td>" + element + "</td>"
-            })
+            })            
             str += "</tr>"
         })
         $("#table").html(str)

@@ -73,6 +73,10 @@
                             </div>
                         </div>
                         <div class="col">
+                            <label>warning %</label>
+                            <input type="number" id="warning" style="width: 60px;" />
+                        </div>
+                        <div class="col">
                             <button id="btn-connect">Start</button>
                         </div>
                        
@@ -90,19 +94,21 @@
                 <div class="col-lg-12 contenedor">
                     <br>
                     <table border="3" width="500px" style="text-align:center;" class="table" >
-                        <thead bgcolor="lime">
+                        <thead class="bg-info">
                             <tr>
                                 <td>Tablespace</td>
                                 <td>Max MB</td>
                                 <td>Free MB</td>
                                 <td>Used MB</td>
                                 <td>%SP</td>
-                                <td colspan="2">SatSP</td>
-                                <td colspan="2">Sat Max</td>
+                                <!--<td colspan="2">SatSP</td>
+                                <td colspan="2">Sat Max</td>-->
+                                <td>SatSP</td>
+                                <td>Sat Max</td>
                             </tr>
                         </thead>
                         <tbody id="table">
-                            <!--<tr>
+                            <tr>
                                 <td>A1</td>
                                 <td>300</td>
                                 <td>250</td>
@@ -113,7 +119,7 @@
                                 <td>4d:10h</td>
                                 <td>4d:10h</td> 
                             </tr>
-                            <tr>
+                            <tr class="bg-success">
                                 <td>A2</td>
                                 <td>400</td>
                                 <td>150</td>
@@ -124,7 +130,7 @@
                                 <td>4d:10h</td>
                                 <td>4d:10h</td> 
                             </tr>
-                            <tr>
+                            <tr class="bg-warning">
                                 <td>A3</td>
                                 <td>500</td>
                                 <td>250</td>
@@ -135,7 +141,7 @@
                                 <td>4d:10h</td>
                                 <td>4d:10h</td> 
                             </tr>
-                            <tr bgcolor="red">
+                            <tr class="bg-danger">
                                 <td>A4</td>
                                 <td>600</td>
                                 <td>50</td>
@@ -145,7 +151,7 @@
                                 <td>2d:2h</td>
                                 <td>4d:10h</td>
                                 <td>4d:10h</td> 
-                            </tr>-->
+                            </tr>
                         </tbody>
                     </table>
                     <br>
