@@ -1,3 +1,4 @@
-# DB_Storage_Monitor
+# DB_Monitor
 TAREA:
-Aplicacion de monitoreo de almacenamiento de una base de datos oracle
+Monitor 1- monitoreo de almacenamiento
+Monitor 2- monitoreo del buffer (SGA)
