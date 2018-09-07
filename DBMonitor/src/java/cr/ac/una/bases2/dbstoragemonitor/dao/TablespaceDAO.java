@@ -4,8 +4,6 @@ import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import oracle.jdbc.OracleTypes;
 import org.json.JSONArray;
 
@@ -77,6 +75,36 @@ public class TablespaceDAO extends ABaseDAO{
             }
         }
         return tablespaces;
+    }
+    
+    public ResultSet executeQuery(String statement) throws ClassNotFoundException{
+      try {
+          conectar();
+          Statement stm = conexion.createStatement();
+          return stm.executeQuery(statement);
+      } catch (SQLException ex) {
+      }
+      return null;
+    }
+    
+    public JSONArray getSaturacion(String tbname) throws Exception{
+        JSONArray sat = new JSONArray();
+         String sql="SELECT calcula_sat_sp_dias('"+tbname+"') \"saturacion\" " +
+        "FROM dual union all " +
+        "SELECT calcula_sat_sp_horas('"+tbname+"')  " +
+        "FROM dual union all " +
+        "SELECT calcula_sat_total_dias ('"+tbname+"') " +
+        "FROM dual union all " +
+        "SELECT calcula_sat_total_horas ('"+tbname+"') " +
+        "FROM dual";
+        sql = String.format(sql);
+        ResultSet rs = executeQuery(sql);
+         while(rs.next()){
+             JSONArray tuple = new JSONArray();
+             tuple.put(rs.getString("saturacion"));
+             sat.put(tuple);
+        }
+        return sat; 
     }
    
 }

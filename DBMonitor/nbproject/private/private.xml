@@ -3,19 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/controller.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/ABaseDAO.java</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/loadIndex.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/Storage.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/TablespaceDAO.java</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/Proxy.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/test/Test/Test_f.java</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/pie_chart.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/index.html</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/js/bar_chart.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/web/css/style.css</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/DBAService.java</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBStorageMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/domain/TableSpace.java</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/storage_monitor.html</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/linear_chart.js</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/index.html</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/test/Test/JavaRunCommand.java</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/DBAService.java</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/buffer_monitor.html</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/TablespaceDAO.java</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/Storage.js</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/Proxy.js</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/css/style.css</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/ABaseDAO.java</file>
+            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/test/Test/Test_f.java</file>
         </group>
     </open-files>
 </project-private>
