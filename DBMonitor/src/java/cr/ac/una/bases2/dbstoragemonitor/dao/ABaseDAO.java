@@ -34,19 +34,6 @@ abstract class ABaseDAO {
             conexion.close();       
     }
     
-    
-    
-    
-     public Connection getConnection(){
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            return  DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/DBLG2","sys as sysdba","k1n9r4d2");
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-            System.exit(-1);
-        } 
-        return null;
-    }
-    
+
     
 }

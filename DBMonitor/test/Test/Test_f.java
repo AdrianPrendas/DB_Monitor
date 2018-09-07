@@ -10,22 +10,21 @@ import org.json.JSONArray;
 public class Test_f {
     
     public static void main(String[] args) throws Exception {
-       TablespaceDAO td = new TablespaceDAO();
+
         JSONArray tablespaces  = SGADAO.getInstance().getBufferInfo();
                
         for(int i=0;i<tablespaces.length();i++){
             System.out.println(tablespaces.get(i));
         }
         
-        JSONArray tnames = td.getTabNames();
+        JSONArray tnames = TablespaceDAO.getInstance().getTabNames();
         System.out.println(tnames.length());
         for(int i=0;i<tnames.length();i++){
             System.out.println(tnames.get(i));
         }
         
         
-        
-        JSONArray saturacion = td.getSaturacion("A4");
+        JSONArray saturacion = TablespaceDAO.getInstance().getSaturacion("A4");
         System.out.println(saturacion.length());
         for(int i=0;i<saturacion.length();i++){
             System.out.println(saturacion.get(i));

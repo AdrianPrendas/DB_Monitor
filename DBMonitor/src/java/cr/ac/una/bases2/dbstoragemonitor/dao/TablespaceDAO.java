@@ -20,7 +20,7 @@ public class TablespaceDAO extends ABaseDAO{
     public static TablespaceDAO instance;
     
     private static final String TABLESPACES = "{?= call storageInfo()}";
-    public TablespaceDAO(){
+    private TablespaceDAO(){
         super();
     }
     

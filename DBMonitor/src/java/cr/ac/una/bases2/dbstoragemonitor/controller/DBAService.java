@@ -51,11 +51,6 @@ System.out.println("accion: " + accion);
                     out.print(str);
                     break;
                     
-                 case "getSaturacion":
-                    String str2 = TablespaceDAO.getInstance().getSaturacion("").toString();
-                    System.out.println(str2);
-                    out.print(str2);
-                    break;    
             }
 
         } catch (Exception e) {
