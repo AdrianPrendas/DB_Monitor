@@ -25,17 +25,30 @@ $(function () {
 });
 
 function consult() {
-    Proxy.getTablespaces(function (res) {
-
+    Proxy.getTablespaces(function (table) {
         
+        var index = Storage.retrieve("index")
+        if (index == null) {
+            index = 0
+        }
         
-        Controller.createTable(res)
-        Controller.createBarChart(res)
-        Controller.createPieChart(res, 2)
+        Controller.createTable(table)
+        Controller.createBarChart(table)
+        Controller.createPieChart(table, index)
+        
+        Storage.store("table", table)
+        
 
     })
 
 }
+
+function recuperarTabla(index){
+    var table = Storage.retrieve("table")
+    Storage.store("index", index)
+    Controller.createPieChart(table,index)
+}
+
 
 function countDown(timePeriod, samples) {
 

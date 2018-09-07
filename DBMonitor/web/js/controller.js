@@ -1,12 +1,14 @@
 var Controller = {
     createTable: function (res) {
         var str = ""
+        var i = 0
         res.forEach(function (tuple) {
-            str += "<tr>"
+            str += "<tr onclick=javascript:recuperarTabla(" + i + ")>"
             tuple.forEach(function (element) {
                 str += "<td>" + element + "</td>"
-            })            
+            })
             str += "</tr>"
+            i++
         })
         $("#table").html(str)
     },
@@ -63,6 +65,37 @@ var Controller = {
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
+        chart.draw(data, options);
+    },
+    createLinearChart: function (buffer) {
+        google.charts.load('current', {'packages': ['corechart']});
+
+        var used = buffer['FREE'].map(function (f) {
+            return (buffer['MAX'] - f) / 1024 / 1024
+        })
+
+        var warning = $("#warning").val() / 100
+        warning = buffer['MAX']/1024/1024 * warning
+
+        var arr = [['Time', 'used MB', 'warning']]
+        for (var k = 0; k < used.length; k++) {
+            arr.push([buffer['TIME'][k], used[k], warning])
+        }
+
+
+
+
+        var data = google.visualization.arrayToDataTable(arr);
+
+        var options = {
+            title: 'Buffer usage',
+            hAxis: {title: 'Time', titleTextStyle: {color: '#333'}},
+            vAxis: {minValue: 0},
+            colors: ['blue', 'yellow'],
+            series: {1: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('linearchart'));
         chart.draw(data, options);
     }
 }

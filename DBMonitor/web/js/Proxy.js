@@ -16,6 +16,21 @@ Proxy.getTablespaces = function (callback) {
         })
         callback(res)
     }).fail(function (err) {
-        callback(err)
+        alert(err)
+    })
+}
+
+Proxy.getBufferInfo = function (callback) {
+    $.ajax({
+        url: "/DBMonitor/DBAService",
+        type: "POST",
+        dataType: "json",
+        data: {
+            action: "getBufferInfo"
+        }
+    }).done(function (res) {
+        callback(res)
+    }).fail(function (err) {
+        alert(err)
     })
 }

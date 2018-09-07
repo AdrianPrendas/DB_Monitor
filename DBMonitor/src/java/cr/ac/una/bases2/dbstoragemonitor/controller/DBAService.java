@@ -2,6 +2,7 @@ package cr.ac.una.bases2.dbstoragemonitor.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import cr.ac.una.bases2.dbstoragemonitor.dao.SGADAO;
 import cr.ac.una.bases2.dbstoragemonitor.dao.TablespaceDAO;
 import cr.ac.una.bases2.dbstoragemonitor.dao.TablespaceDAOA;
 import java.io.IOException;
@@ -47,8 +48,13 @@ System.out.println("accion: " + accion);
                     break;
                 case "getTablespaces":
                     String str = TablespaceDAO.getInstance().getTablespaces().toString();
-                    System.out.println(str);
+System.out.println(str);
                     out.print(str);
+                    break;
+                case "getBufferInfo":
+                    String sgainfo = SGADAO.getInstance().getBufferInfo().toString();
+System.out.println(sgainfo);
+                    out.print(sgainfo);
                     break;
             }
 
