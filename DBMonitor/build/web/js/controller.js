@@ -66,10 +66,3 @@ var Controller = {
         chart.draw(data, options);
     }
 }
-
-
-
-function drawChart() {
-
-
-}

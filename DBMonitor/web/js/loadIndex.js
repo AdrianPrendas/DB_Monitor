@@ -33,7 +33,6 @@ function consult() {
         if (storage == null) {
             storage = {}
         }
-        console.log(storage)
 
         for (var i = 0; i < res.length; i++) {
             if (storage[res[i][0]] == null) {
