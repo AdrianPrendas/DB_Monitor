@@ -27,53 +27,12 @@ $(function () {
 function consult() {
     Proxy.getTablespaces(function (res) {
 
-        //*** local - sotrage ***
-        var storage = {} // {a1:{size:0,free:[],used:[]}}
-        storage = Storage.retrieve("binnacle");
-        if (storage == null) {
-            storage = {}
-        }
-
-        for (var i = 0; i < res.length; i++) {
-            if (storage[res[i][0]] == null) {
-                storage[res[i][0]] = {size: res[i][1], free: [res[i][2]], used: [res[i][3]], increase:[], avg:0, interval:[]}
-            } else {
-                storage[res[i][0]].size = res[i][1]
-                storage[res[i][0]].free.push(res[i][2])
-                storage[res[i][0]].used.push(res[i][3])
-                storage[res[i][0]].interval.push($("#demo").html())
-                if(storage[res[i][0]].used.length>1){
-                    var arr = storage[res[i][0]].used
-                    var incremento = arr[arr.length-1]-arr[arr.length-2]
-                    storage[res[i][0]].increase.push(incremento)
-                    var sum = storage[res[i][0]].increase.reduce(function(a,b){return a+b})
-                    var avg = sum/storage[res[i][0]].increase.length
-                    storage[res[i][0]].avg = avg
-                }
-            }
-        }
         
-        res = res.map(function(tuple){
-            var total = tuple[1]
-            var free = tuple[2]
-            var used = tuple[3]
-            var warning = tuple[4]
-            var avg = storage[tuple[0]].avg
-            
-            tuple.push($("#warning").val())
-            tuple.push( (free-(total*(100-warning)/100))/avg )
-            tuple.push(free * avg)
-            return tuple
-        })
         
         Controller.createTable(res)
         Controller.createBarChart(res)
         Controller.createPieChart(res, 2)
 
-        Storage.store("binnacle", storage);
-        console.log("new record in local storage");
-        console.log(storage)
-        //*** local - sotrage ***               
     })
 
 }

@@ -10,8 +10,9 @@ Proxy.getTablespaces = function (callback) {
         res.sort(function(a,b){
             return a[0] > b[0]
         })
+        var WARNING = 80
         res = res.map(function(a){
-            return [a[0], a[1], parseInt(a[2]), parseInt(a[3])]
+            return [a[0], a[1], parseInt(a[2]), parseInt(a[3]),WARNING, a[4], a[5], a[6], a[7] ]
         })
         callback(res)
     }).fail(function (err) {

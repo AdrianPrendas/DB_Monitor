@@ -55,6 +55,7 @@ public class TablespaceDAO extends ABaseDAO{
                 
                 tablespaces.put(tuple);
             }
+            tablespaces = completeTable(tablespaces);
         }
         catch (SQLException e) {
             System.out.println("Sentencia no valida");
@@ -75,6 +76,22 @@ public class TablespaceDAO extends ABaseDAO{
             }
         }
         return tablespaces;
+    }
+    
+    public JSONArray completeTable(JSONArray t){
+        for(int i=0;i<t.length();i++){
+            String key = t.getJSONArray(i).getString(0);
+            try{
+                JSONArray c = getSaturacion(key);  
+                for(int j=0;j<c.length();j++){
+                    t.getJSONArray(i).put(c.getJSONArray(j).get(0));
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+            
+        }
+        return t;
     }
     
     public ResultSet executeQuery(String statement) throws ClassNotFoundException{
