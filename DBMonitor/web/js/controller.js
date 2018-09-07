@@ -1,15 +1,23 @@
 var Controller = {
     createTable: function (res) {
         var str = ""
+        var i=0;
         res.forEach(function (tuple) {
-            str += "<tr>"
+            str += "<tr onclick=javascript:recuperarTabla("+i+")>"
             tuple.forEach(function (element) {
                 str += "<td>" + element + "</td>"
-            })            
-            str += "</tr>"
+            }) 
+           //str += "<td><input type='radio' value='"+i+"' onclick=javascript:recuperarTabla("+i+")></td>"
+           i++;
+           str += "</tr>"
         })
+            
+         
         $("#table").html(str)
     },
+    
+   
+    
     createBarChart: function (res) {
 
         google.charts.load('current', {packages: ['corechart', 'bar']});
@@ -17,7 +25,6 @@ var Controller = {
         data.addColumn('string', 'Tablespace N');
         data.addColumn('number', 'Used');
         data.addColumn('number', 'Free');
-
         res = res.map(function (e) {
             return [e[0], e[3], e[2]];
         })
@@ -42,10 +49,8 @@ var Controller = {
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        
         chart.draw(data, options);
-
-
-
     },
     createPieChart: function (res, tablespace_position) {
         google.charts.load('current', {'packages': ['corechart']});

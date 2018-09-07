@@ -20,7 +20,7 @@ abstract class ABaseDAO {
     protected void conectar() throws SQLException,ClassNotFoundException 
     {   
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        conexion = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/Quiz_1","sys as sysdba","manager");
+        conexion = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/PR1","sys as sysdba","root");
 
     }
     

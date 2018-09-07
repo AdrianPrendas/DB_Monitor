@@ -1,6 +1,6 @@
 Proxy.getTablespaces = function (callback) {
     $.ajax({
-        url: "/DBStorageMonitor/DBAService",
+        url: "/DBMonitor/DBAService",
         type: "POST",
         dataType: "json",
         data: {
