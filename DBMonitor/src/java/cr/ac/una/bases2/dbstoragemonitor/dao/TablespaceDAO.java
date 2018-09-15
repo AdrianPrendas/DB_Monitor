@@ -16,6 +16,7 @@ public class TablespaceDAO extends ABaseDAO{
     public static TablespaceDAO instance;
     
     private static final String TABLESPACES = "{?= call storageInfo()}";
+    private static final String SATURACION = "{?= call saturaciones(?)}";
     
     private TablespaceDAO(){
         super();
@@ -30,9 +31,8 @@ public class TablespaceDAO extends ABaseDAO{
     
     
     public JSONArray getTablespaces() {
-        ResultSet rs = null;
         JSONArray tablespaces = new JSONArray();
-        
+        ResultSet rs = null;
         CallableStatement pstmt=null;  
         try {
             conectar();
@@ -94,34 +94,49 @@ public class TablespaceDAO extends ABaseDAO{
         return t;
     }
     
-    public ResultSet executeQuery(String statement) throws ClassNotFoundException{
-      try {
-          conectar();
-          Statement stm = conexion.createStatement();
-          return stm.executeQuery(statement);
-      } catch (SQLException ex) {
-      }
-      return null;
-    }
     
     public JSONArray getSaturacion(String tbname) throws Exception{
         JSONArray sat = new JSONArray();
-         String sql="SELECT calcula_sat_sp_dias('"+tbname+"') \"saturacion\" " +
-        "FROM dual union all " +
-        "SELECT calcula_sat_sp_horas('"+tbname+"')  " +
-        "FROM dual union all " +
-        "SELECT calcula_sat_total_dias ('"+tbname+"') " +
-        "FROM dual union all " +
-        "SELECT calcula_sat_total_horas ('"+tbname+"') " +
-        "FROM dual";
-        sql = String.format(sql);
-        ResultSet rs = executeQuery(sql);
-         while(rs.next()){
-             JSONArray tuple = new JSONArray();
-             tuple.put(rs.getString("saturacion"));
-             sat.put(tuple);
+        ResultSet rs = null;
+        CallableStatement pstmt=null;  
+        
+        try {
+            conectar();
+        }catch (ClassNotFoundException e) {
+            System.out.println("No se ha localizado el driver");
+        } catch (SQLException e) {
+            System.out.println("La base de datos no se encuentra disponible");
         }
-        return sat; 
+        try{
+            pstmt = conexion.prepareCall(SATURACION);                
+            //pstmt.registerOutParameter(1, OracleTypes.CURSOR);       
+            pstmt.setString(1,tbname);
+            pstmt.execute();
+            rs = (ResultSet)pstmt.getObject(1); 
+            while (rs.next()) {
+                sat.put(rs.getString("sat"));
+            }
+            
+        }
+        catch (SQLException e) {
+            System.out.println("Sentencia no valida");
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+                desconectar();
+            } catch (SQLException e) {
+                System.out.println("Estatutos invalidos o nulos");
+               e.printStackTrace();
+            }
+        }
+        return sat;
     }
    
 }
