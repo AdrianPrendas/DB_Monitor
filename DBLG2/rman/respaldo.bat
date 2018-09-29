@@ -1,0 +1,1 @@
+rman target=/ @TA2_DB.run

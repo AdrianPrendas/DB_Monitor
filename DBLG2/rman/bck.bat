@@ -1,0 +1,1 @@
+rman target / @backup.rcv
