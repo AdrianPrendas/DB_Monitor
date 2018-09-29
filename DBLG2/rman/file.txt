@@ -1,0 +1,6 @@
+RUN{
+	BACKUP AS BACKUPSET TABLESPACE USERS;
+    backup as copy database spfile plus archivelog;
+    backup database spfile plus archivelog;
+}
+EXIT;

