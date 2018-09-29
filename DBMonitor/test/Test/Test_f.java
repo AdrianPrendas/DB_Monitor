@@ -17,13 +17,9 @@ public class Test_f {
     public static void main(String[] args) {
         try{
         
-<<<<<<< HEAD
+
         JSONArray tablespaces  = TablespaceDAO.getInstance().getTablespaces();
                 //SGADAO.getInstance().getBufferInfo();
-=======
-        JSONArray tablespaces  = TablespaceDAO.getInstance().getSaturacion("A1");
-//SGADAO.getInstance().getBufferInfo();
->>>>>>> 8fd226bcf28e09fb05b8e4c843b4f67b762f5e2b
                 //TablespaceDAO.getInstance().getSaturacion("A1");
                 //TablespaceDAO.getInstance().getTablespaces();
         for(int i=0;i<tablespaces.length();i++){
