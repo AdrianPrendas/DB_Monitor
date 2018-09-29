@@ -3,18 +3,18 @@ Proyecto Monitor de base de datos oracle:
 <br>
 <ol>
 	<li>
-		monitoreo de almacenamiento		
-	</li>
-	<li>
-		monitoreo del buffer (SGA)
-	</li>
-	<li>
-		monitoreo de estrategias de respaldo
+		Administracion de clientes remotos
 	</li>
 	<li>
 		Administracion de estrategias de respaldo
 	</li>
 	<li>
-		Administracion de clientes remotos
+		monitoreo de estrategias de respaldo
+	</li>
+	<li>
+		monitoreo de almacenamiento		
+	</li>
+	<li>
+		monitoreo del buffer (SGA)
 	</li>
 </ol>
