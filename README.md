@@ -1,6 +1,20 @@
 # DB_Monitor
-TAREA:
+Proyecto Monitor de base de datos oracle:
 <br>
-Monitor 1- monitoreo de almacenamiento
-<br>
-Monitor 2- monitoreo del buffer (SGA)
+<ol>
+	<i>
+		monitoreo de almacenamiento		
+	</i>
+	<i>
+		monitoreo del buffer (SGA)
+	</i>
+	<i>
+		monitoreo de estrategias de respaldo
+	</i>
+	<i>
+		Administracion de estrategias de respaldo
+	</i>
+	<i>
+		Administracion de clientes remotos
+	</i>
+</ol>
