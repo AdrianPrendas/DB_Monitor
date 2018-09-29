@@ -1,5 +1,5 @@
- 
-package cr.ac.una.bases2.dbmonitor.util;
+
+ package cr.ac.una.bases2.dbmonitor.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
