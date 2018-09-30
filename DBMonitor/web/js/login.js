@@ -1,7 +1,5 @@
-var Proxy = Proxy || {}
-
-$(function () {
-    $("#registerForm").on("submit", function (event) {
+$(function(){
+    $("#loginForm").on("submit", function (event) {
         event.preventDefault()
         
         var shaObj = new jsSHA("SHA-512", "TEXT");
@@ -13,10 +11,9 @@ $(function () {
         var username = $("#user-name").val()
         var user = new User(username, hash)
         //console.log(user)
-        Proxy.register(user,function(res){
+        Proxy.login(user,function(res){
             console.log(res)
         })
     })
     
-
 });

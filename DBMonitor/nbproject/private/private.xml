@@ -1,30 +1,21 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/login.html</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/storage_monitor.html</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/ABaseDAO.java</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/login.js</file>
             <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/register.html</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/UserService.java</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/index.html</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/test/Test/Test_f.java</file>
-            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/controller/DBAService.java</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/controller/UserService.java</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/register.js</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/JsonUtils.js</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/Proxy.js</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/User.js</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/domain/Jsonable.java</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/js/Storage.js</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/domain/User.java</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/web/css/style.css</file>
+            <file>file:/G:/Carrera/Ciclo%20II%202018/Administracion%20de%20Base%20de%20datos/DB_Monitor/DBMonitor/src/java/cr/ac/una/bases2/dbmonitor/dao/UserDAO.java</file>
         </group>
     </open-files>
 </project-private>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/storage_monitor.html</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/Proxy.js</file>
-            <file>file:/C:/Users/Josue/Desktop/Bases%202/Monitor/DBMonitor/web/js/loadIndex.js</file>
-        </group>
-    </open-files>
-</project-private>
->>>>>>> 8fd226bcf28e09fb05b8e4c843b4f67b762f5e2b

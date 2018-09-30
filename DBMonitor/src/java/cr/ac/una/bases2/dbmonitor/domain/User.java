@@ -4,7 +4,7 @@ package cr.ac.una.bases2.dbmonitor.domain;
  *
  * @author a6r1a
  */
-public class User {
+public class User implements Jsonable{
     String username;
     String password;
     int access_level;

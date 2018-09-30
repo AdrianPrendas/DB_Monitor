@@ -1,9 +1,10 @@
-
 package cr.ac.una.bases2.dbmonitor.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.typeadapters.RuntimeTypeAdapterFactory;
 import cr.ac.una.bases2.dbmonitor.dao.UserDAO;
+import cr.ac.una.bases2.dbmonitor.domain.Jsonable;
 import cr.ac.una.bases2.dbmonitor.domain.User;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,43 +35,56 @@ public class UserService extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("application/json");
         try (PrintWriter out = response.getWriter()) {
-           
+            RuntimeTypeAdapterFactory<Jsonable> rta = RuntimeTypeAdapterFactory.of(Jsonable.class, "_class")
+                    .registerSubtype(User.class, "User");
 
-            Gson gson = new GsonBuilder().setDateFormat("dd/MM/yyyy").create();
             String json = "";
+            Gson gson = new GsonBuilder().registerTypeAdapterFactory(rta).setDateFormat("dd/MM/yyyy").create();
             JSONObject obj = new JSONObject();
-            
+            User user = null;
 
             String accion = request.getParameter("action");
-            
+
 System.out.println("accion: " + accion);
             switch (accion) {
                 case "register":
-                    User u = UserDAO.getInstance().create(
-                            new User(
-                                    request.getParameter("username"),
-                                    request.getParameter("password")
-                            ));
-                    if(u==null){
-                         obj = new JSONObject();
+                     json = request.getParameter("user");
+                    user = gson.fromJson(json, User.class);
+System.out.println("User");
+System.out.println(user);
+                    user = UserDAO.getInstance().create(user);
+                    if (user == null) {
+                        obj = new JSONObject();
                         obj.put("status", "ER");
-                        obj.put("response", "Error al crear el usuario");
-
-System.out.println(obj.toString());
-                        out.write(obj.toString());
-                    }else{
-
+                        obj.put("response", "Error creating user");
+                    } else {
                         obj = new JSONObject();
                         obj.put("status", "OK");
-                        obj.put("response", "se creo el usuario");
-                        obj.put("username", u.getUsername());
-                        obj.put("password", u.getPassword());
-                        
-System.out.println(obj.toString());
-                        out.write(obj.toString());
+                        obj.put("response", "user created");
+                        obj.put("user", gson.toJson(user));
                     }
+System.out.println(obj.toString());
+                    out.write(obj.toString());
                     break;
-                case "login":break;
+                case "login":
+                    json = request.getParameter("user");
+                    user = gson.fromJson(json, User.class);
+System.out.println("User");
+System.out.println(user);
+                    user = UserDAO.getInstance().login(user);
+                    if (user == null) {
+                        obj = new JSONObject();
+                        obj.put("status", "ER");
+                        obj.put("response", "Error worng user or password");
+                    } else {
+                        obj = new JSONObject();
+                        obj.put("status", "OK");
+                        obj.put("response", "success");
+                        obj.put("user", gson.toJson(user));
+                    }
+System.out.println(obj.toString());
+                    out.write(obj.toString());
+                    break;
             }
 
         } catch (Exception e) {

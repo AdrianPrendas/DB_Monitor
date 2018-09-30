@@ -45,16 +45,38 @@ Proxy.register = function (user, callback) {
         dataType: "json",
         data: {
             action: "register",
-            username:user.username,
-            password:user.password
+            user:JSON.stringify(JsonUtils.repalcer(0,user))
         }
     }).done(function (res) {
         if(res.status == "ER"){
             alert(res.response)
         }else if(res.status =="OK")
+            res.user = JsonUtils.revive(0,JSON.parse(res.user))
             alert(res.response)
             callback(res)
     }).fail(function (err) {
         console.log(err)
     })
 }
+
+Proxy.login = function (user, callback) {
+    $.ajax({
+        url: "/DBMonitor/UserService",
+        type: "POST",
+        dataType: "json",
+        data: {
+            action: "login",
+            user:JSON.stringify(JsonUtils.repalcer(0,user))
+        }
+    }).done(function (res) {
+        if(res.status == "ER"){
+            alert(res.response)
+        }else if(res.status =="OK")
+            res.user = JsonUtils.revive(0,JSON.parse(res.user))
+            alert(res.response)
+            callback(res)
+    }).fail(function (err) {
+        console.log(err)
+    })
+}
+//fin de metodos del usuario
