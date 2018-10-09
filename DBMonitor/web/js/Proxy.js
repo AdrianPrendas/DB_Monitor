@@ -1,3 +1,5 @@
+var Proxy = Proxy || {}
+
 Proxy.getTablespaces = function (callback) {
     $.ajax({
         url: "/DBMonitor/DBAService",
@@ -32,5 +34,27 @@ Proxy.getBufferInfo = function (callback) {
         callback(res)
     }).fail(function (err) {
         alert(err)
+    })
+}
+
+//metodos de usuario
+Proxy.register = function (user, callback) {
+    $.ajax({
+        url: "/DBMonitor/UserService",
+        type: "POST",
+        dataType: "json",
+        data: {
+            action: "register",
+            username:user.username,
+            password:user.password
+        }
+    }).done(function (res) {
+        if(res.status == "ER"){
+            alert(res.response)
+        }else if(res.status =="OK")
+            alert(res.response)
+            callback(res)
+    }).fail(function (err) {
+        console.log(err)
     })
 }

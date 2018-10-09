@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /DBStorageMonitor/dist/
 /DBMonitor/build/
 *.class
@@ -5,4 +6,10 @@
 DBMonitor/src/java/cr/ac/una/bases2/dbstoragemonitor/dao/ABaseDAO.java
 *.properties
 *.xml
+*.xml
+=======
+/DBStorageMonitor/dist/
+/DBMonitor/build/
+/DBMonitor/dist/
+>>>>>>> eb67ec53513fa3a6a1f80fc0f5fe2deb1cf535a4
 *.xml

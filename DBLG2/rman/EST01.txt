@@ -1,0 +1,10 @@
+RUN{
+    BACKUP ARCHIVELOG ALL;
+    SPOOL LOG TO 'C:\DBLG2\FR_A\reporte_archive_backup.log';
+    SHOW ALL;
+    SPOOL LOG OFF;
+    BACKUP DATABASE;
+    SPOOL LOG TO 'C:\DBLG2\FR_A\reporte_DB_backup.log';
+    SPOOL LOG OFF;
+}
+EXIT;
